@@ -7,15 +7,15 @@ Project Overview.
 
 Project Architecture
 List of Cloud Services used:
-    - Cloud Compute Engine for creating virtual machines
-    -VPC Networking
+- Cloud Compute Engine for creating virtual machines
+-VPC Networking
         CLOUD Network Address Translation (NAT)
         Identity Aware Proxy
         Firewall Rules
-    -Authentication
+-Authentication and Authorization
         Google groups for creating
-    -Boot Disk and LINUX Operating System.
-    -Network File Storage
+-Boot Disk and LINUX Operating System.
+-Network File Storage
 
 
 SETUP
@@ -37,4 +37,5 @@ SETUP
 
 
 CREDENTIALS and ACCESS.
+
     gcloud compute start-iap-tunnel [virtual machine's id] 3389 --local-host-port=localhost:8080 --zone=[virtual machine's zone]
